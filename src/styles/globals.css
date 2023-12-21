@@ -2,26 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.ficon:hover, .f-nav a:hover {
+    filter: invert(80%) sepia(37%) saturate(7048%) hue-rotate(132deg)
+      brightness(105%) contrast(104%);
+      color:  #202a3c,
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  
+  #navbar a.active {
+    color: hsl(161, 100%, 44%);
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+  }
