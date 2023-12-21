@@ -1,5 +1,5 @@
 import Link from "next/link";
-const About = () => {
+const About: React.FC = () => {
   return (
     <section
       id="about-us"

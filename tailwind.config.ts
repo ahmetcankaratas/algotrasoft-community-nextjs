@@ -20,8 +20,8 @@ const config: Config = {
         opensans: ['Open Sans', 'sans-serif'],
       },
       backgroundImage: {
-        'scanner-cover': "url('./assets/images/peaks.svg')",
-        'scanner-cover-light': "url('./assets/images/light-peaks.svg')"
+        'scanner-cover': "url('/images/peaks.svg')",
+        'scanner-cover-light': "url('/images/light-peaks.svg')"
       }
     },
   },
