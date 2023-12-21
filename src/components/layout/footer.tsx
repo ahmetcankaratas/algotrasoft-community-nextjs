@@ -6,9 +6,8 @@ const Footer: React.FC = () => {
         <div className="flex flex-col justify-between space-y-24 md:flex-row md:space-y-0">
           <div className="flex items-center space-x-3">
             <div className="w-6">
-                {/* TODO: optimize image*/}
               <img
-                src="./assets/images/icon-email.svg"
+                src="/images/icon-email.svg"
                 alt=""
                 className="scale-10"
               />
@@ -33,9 +32,8 @@ const Footer: React.FC = () => {
               href="https://tr.linkedin.com/company/algotrasoft"
               target="_blank" rel="noreferrer"
             >
-                {/* TODO: optimize image*/}
               <img
-                src="./assets/images/linkedin.svg"
+                src="/images/linkedin.svg"
                 alt=""
                 className="ficon invert"
               />
