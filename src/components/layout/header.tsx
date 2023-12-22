@@ -14,8 +14,8 @@ const Header: React.FC = () => {
         <Link href="/" className="tracking-widest  hover:text-accentCyan">
           Home
         </Link>
-        <Link href="/scanner" className="tracking-widest  hover:text-accentCyan">
-          Scanner
+        <Link href="/events" className="tracking-widest  hover:text-accentCyan">
+          Events
         </Link>
         <Link href="/contact" className="tracking-widest  hover:text-accentCyan">
           Contact
