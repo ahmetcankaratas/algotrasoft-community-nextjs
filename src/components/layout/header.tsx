@@ -4,7 +4,7 @@ const Header: React.FC = () => {
   const [colorTheme, setTheme] = useDarkSide();
 
   const toggleDarkMode = () => {
-      // setTheme(colorTheme)
+        setTheme(colorTheme)
   };
 
   return (

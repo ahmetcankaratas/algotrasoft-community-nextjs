@@ -6,7 +6,7 @@ interface EventListProps {
 }
 const EventList: React.FC<EventListProps> = ({ items }) => {
   return (
-    <ul className="mt-8 flex max-h-screen w-full flex-col space-y-8">
+    <ul className="mt-8 flex w-full flex-col space-y-8">
       {items.map((event) => (
         <EventItem key={event.id} {...event} />
       ))}

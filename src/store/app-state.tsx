@@ -16,7 +16,13 @@ export const useApp = () => useContext(AppContext);
 export const AppStateProvider: React.FC<AppStateProviderProps> = ({
   children,
 }) => {
-  const [theme, setTheme] = useState<string>(localStorage.theme as string);
+  const [theme, setTheme] = useState<string>(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.theme as string || "dark"
+    }
+    return "dark"; // fallback for server-side rendering
+  });
+  
 
   return (
     <AppContext.Provider

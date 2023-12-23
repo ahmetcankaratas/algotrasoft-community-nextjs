@@ -1,5 +1,6 @@
 import { Event } from "@/@types/api";
 import Link from "next/link"
+import Image from "next/image";
 const EventItem: React.FC<Event> = (props) => {
   const { title, image, date, location, id } = props;
 
@@ -14,16 +15,16 @@ const EventItem: React.FC<Event> = (props) => {
   return (
     <li className="mx-auto w-10/12">
       <Link
-        href={`/event/${id}`}
+        href={`/events/${id}`}
         className="pointer flex flex-row justify-between rounded-lg bg-gray-100 p-10 duration-200 hover:scale-105 dark:bg-darkBlue3"
       >
+        <Image width={160} height={160} className="w-100 object-cover h-40 hidden xl:block " src={"/" + image} alt={title} />
         <div className="group flex flex-col space-y-3">
-          <Link
-            href={`/event/${id}`}
+          <div
             className="text-lg font-bold md:text-2xl"
           >
             {title}
-          </Link>
+          </div>
           <h4 className="md:text-md text-sm">{humanReadableDate}</h4>
         </div>
         <div className="group flex flex-col space-y-3">
