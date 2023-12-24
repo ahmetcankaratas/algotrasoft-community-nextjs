@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"
 const About: React.FC = () => {
   return (
     <section
@@ -7,7 +8,7 @@ const About: React.FC = () => {
     >
       <div className="container mx-auto flex flex-col items-center px-6 pt-24 pb-32 md:flex-row md:space-x-16">
         <div className="w-2/3 md:w-1/2">
-          <img src="/images/network.png" alt="" className="mb-10" />
+          <Image height={584} width={584} src="/images/network.png" alt="" className="mb-10" />
         </div>
 
         <div className="flex flex-col items-start md:w-1/2">

@@ -26,11 +26,6 @@ const Header: React.FC = () => {
         <Link href="/contact" className={linkClass('/contact')}>
           Contact
         </Link>
-        <span>|</span>
-        <Link href="/auth"
-      className="rounded-full bg-darkCyan px-8 py-3 tracking-widest hover:bg-accentCyan hover:opacity-70"
-      >Login
-    </Link>
         <button
           id="theme-toggle"
           className="none 5 rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:ring-gray-700 dark:hover:bg-gray-700"

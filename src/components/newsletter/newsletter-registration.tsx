@@ -42,7 +42,7 @@ const NewsletterRegistration: React.FC = () => {
     return data;
   };
 
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const enteredEmail = emailInputRef.current!.value;

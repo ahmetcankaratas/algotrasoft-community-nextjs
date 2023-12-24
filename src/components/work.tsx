@@ -44,7 +44,19 @@ const Work: React.FC = () => {
               encouraged to participate. By supplying the industry with
               webinars, training materials, white papers, and other information,
               we can demonstrate the extent to which our intelligence is
-              competitive.
+              competitive. To see
+              events,{" "}
+              <Link
+                href="/events"
+                className="border-b border-accentCyan text-accentCyan"
+              >
+                Click
+                <img
+                  src="/images/icon-arrow.svg"
+                  alt=""
+                  className="ml-2 inline pb-1"
+                />
+              </Link>
             </p>
           </div>
 
@@ -57,19 +69,7 @@ const Work: React.FC = () => {
               Our scanner is a tool that allows you to scan the market for best
               algorithmic strategtic results. You can then download the code and
               run it on your own machine. You can also use the code as a
-              starting point for your own algorithmic trading strategy. To see
-              the scanner in action,{" "}
-              <Link
-                href="/scanner#scanner"
-                className="border-b border-accentCyan text-accentCyan"
-              >
-                Click
-                <img
-                  src="/images/icon-arrow.svg"
-                  alt=""
-                  className="ml-2 inline pb-1"
-                />
-              </Link>
+              starting point for your own algorithmic trading strategy.
             </p>
           </div>
         </div>

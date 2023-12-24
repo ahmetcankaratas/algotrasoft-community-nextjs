@@ -1,7 +1,7 @@
 import { useEffect, Dispatch, SetStateAction } from "react";
 import { useApp } from "../store/app-state";
   
-export default function useDarkSide():[string, Dispatch<SetStateAction<string>>] {
+const useDarkSide = ():[string, Dispatch<SetStateAction<string>>] => {
     const { theme, setTheme } = useApp();
 
     const colorTheme = theme === "dark" ? "light" : "dark";
@@ -20,3 +20,5 @@ export default function useDarkSide():[string, Dispatch<SetStateAction<string>>]
   
     return [colorTheme, setTheme]
 }
+
+export default useDarkSide;
