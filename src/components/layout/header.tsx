@@ -1,26 +1,36 @@
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import useDarkSide from "../../hooks/use-dark-side";
 const Header: React.FC = () => {
+  const router = useRouter();
   const [colorTheme, setTheme] = useDarkSide();
 
   const toggleDarkMode = () => {
         setTheme(colorTheme)
   };
 
+  const linkClass = (pathname: string) =>
+    `tracking-widest hover:text-accentCyan ${
+      router.pathname === pathname ? 'active' : ''
+    }`;
+
   return (
     <header id="navbar" className="container mx-auto mt-10 h-40 px-6 text-center md:h-20">
       <div className="top-12 right-12 flex items-center justify-center space-x-4 md:absolute md:space-x-10">
-        {/* TODO: convert Link end to nextJs usage */}
-        <Link href="/" className="tracking-widest  hover:text-accentCyan">
+        <Link href="/" className={linkClass('/')}>
           Home
         </Link>
-        <Link href="/events" className="tracking-widest  hover:text-accentCyan">
+        <Link href="/events" className={linkClass('/events')}>
           Events
         </Link>
-        <Link href="/contact" className="tracking-widest  hover:text-accentCyan">
+        <Link href="/contact" className={linkClass('/contact')}>
           Contact
         </Link>
-
+        <span>|</span>
+        <Link href="/auth"
+      className="rounded-full bg-darkCyan px-8 py-3 tracking-widest hover:bg-accentCyan hover:opacity-70"
+      >Login
+    </Link>
         <button
           id="theme-toggle"
           className="none 5 rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:ring-gray-700 dark:hover:bg-gray-700"

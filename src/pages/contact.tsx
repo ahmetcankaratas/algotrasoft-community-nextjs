@@ -1,6 +1,6 @@
 import Cover from "@/components/UI/cover";
 import Info from "@/components/info";
-const Contact: React.FC = () => {
+const ContactPage: React.FC = () => {
   return (
       <section id="contact" className="bg-gray-50 dark:bg-darkBlue">
         <Cover header="Contact" description="Join Us" />
@@ -9,4 +9,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ContactPage;
