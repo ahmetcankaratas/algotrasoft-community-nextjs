@@ -5,6 +5,7 @@ import Cover from "@/components/UI/cover";
 import BackButton from "@/components/UI/back-button";
 import EventContent from "@/components/event-detail/event-content";
 import NotFound from "@/components/not-found";
+import Head from "next/head";
 
 type EventDetailPageProps = {
   selectedEvent: Event;
@@ -17,7 +18,12 @@ const EventDetailPage: React.FC<EventDetailPageProps> = (props) => {
   }
 
   return (
-    <section id="result" className="bg-gray-50 dark:bg-darkBlue">
+    <>
+    <Head>
+      <title>{event.title}</title>
+      <meta name="description" content={event.description}></meta>
+    </Head>
+     <section id="result" className="bg-gray-50 dark:bg-darkBlue">
       <Cover header={event?.title} description="Event Details" />
       {event && (
         <EventContent
@@ -30,6 +36,8 @@ const EventDetailPage: React.FC<EventDetailPageProps> = (props) => {
       )}
       <BackButton />
     </section>
+    </>
+   
   );
 };
 
