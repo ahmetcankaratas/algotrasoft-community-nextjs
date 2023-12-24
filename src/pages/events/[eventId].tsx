@@ -49,7 +49,7 @@ export async function getStaticProps(context: GetStaticPropsContext) {
     props: {
       selectedEvent: event || null,
     },
-    revalidate: 30,
+    revalidate: 3600,
   };
 }
 
