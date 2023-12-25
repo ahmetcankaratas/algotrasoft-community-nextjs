@@ -21,9 +21,12 @@ This app is also developed on Angular with tailwind with different features. Cli
 
 ## 📷 Screenshots
 <b>Homepage</b>
-
+<img width="1440" alt="" src="https://github.com/ahmetcankaratas/algotrasoft-community-nextjs/assets/53529387/53c61612-6085-49d7-83f8-1cc42616cac6">
+<img width="1440" alt="" src="https://github.com/ahmetcankaratas/algotrasoft-community-nextjs/assets/53529387/ce8012a4-3b38-497b-9c70-2d99fdbd8555">
 
 <b>Events</b>
+<img width="1440" alt="" src="https://github.com/ahmetcankaratas/algotrasoft-community-nextjs/assets/53529387/5043da45-faf2-4003-b965-504c7870aa6d">
+<img width="1440" alt="" src="https://github.com/ahmetcankaratas/algotrasoft-community-nextjs/assets/53529387/66929f02-aa92-4a9a-b9be-b68b23836366">
 
 
 ## Getting Started
