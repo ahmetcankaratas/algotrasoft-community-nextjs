@@ -7,7 +7,7 @@ LiveURL: https://algotrasoft-community-nextjs-o74j6p92s-lingardium.vercel.app/
 
 <hr>
 <div align="center">
-This app is also developed on Angular with tailwind with different features. Click the link below to view.
+This app is also developed on Angular with different features. Click the link below to view.
 
 <b>Angular Version:</b> https://github.com/ahmetcankaratas/algotrasoft-community-angular
 </div>
